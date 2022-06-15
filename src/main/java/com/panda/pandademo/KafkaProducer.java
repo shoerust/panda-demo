@@ -33,7 +33,7 @@ public record KafkaProducer(
 
     @PostConstruct
     public void send() {
-        //IntStream.range(0, 1000).forEach(id -> sendMessage("oh my god: " + id));
+        IntStream.range(0, 1000).forEach(id -> sendMessage("oh my god: " + id));
     }
 
 }
